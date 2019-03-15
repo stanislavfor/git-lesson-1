@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+<body>
+
+<div class="display" data-link="Hello_world.html">
+<a href="Hello_world.html">
+    <div class="text">
+        <p>Hello world!</p>
+    </div>
+</a>
+</div>
+<script>
+var paragraph = document.querySelector('.display'),
+text = paragraph.querySelector('.text');
+var text = paragraph.dataset.link;
+var a = document.createElement('a');
+var a.href = link;
+var oldChild = paragraph.removeChild(text);
+ paragraph.insertBefore(a, paragraph.firstChild);
+a.innerHTML = oldChild.outerHTML;    
+</script>
+</body>
+</html>
